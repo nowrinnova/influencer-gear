@@ -29,12 +29,13 @@ main {
 header {
   padding: 20px 100px 20px 100px;
 }
+
 nav {
   max-width: 1200px;
   margin: 0 auto;
 }
 .btn {
-  max-width: 200px;
+  width:200px;
   background-color: rgb(224, 44, 109);
   border: none;
   height: 50px;
@@ -64,6 +65,7 @@ nav {
 .start-enjoy {
   align-items: center;
   gap: 6rem;
+  margin-bottom: 50px;
 }
 
 .Influencer-title {
@@ -87,14 +89,86 @@ nav {
 .btn-round{
   border-radius: 41px;
 }
+.brand{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+
+}
+.brand-container{
+  align-items: center;
+  justify-content: center;
+}
+.brand-container> img{
+  width: 6.5rem;
+  height: 1.5rem;
+  margin: 10px;
+}
+
 /* nav section ends */
 /* header section ends */
 
+/* main section starts here */
+.popular-collection{
+  max-width: 800px;
+  padding: 50px 120px;
+  margin: 0 auto;
+}
+.collection-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+.collection-card{
+  max-width: 280px;
+  height: 25rem;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  background: rgb(255, 255, 255);
+  line-height: 20px;
+}
+.collection-heading{
+  font-size: 20px;
+font-weight: 500;
+}
+.collection-details,.collection-rating{
+  font-weight: 600;
+font-size:12px ;
+color: rgb(120, 120, 133);
+
+}
+/* main section ends here */
+
 @media screen and (max-width: 576px) {
-  .navbar {
+  header{
+    padding: 0px;
+  }
+  .start-enjoy{
     flex-direction: column;
   }
-  .nav-item {
+  .brand-container {
+    flex-wrap: wrap;
+  }
+  .nav-item,.camera {
     display: block;
   }
+  .navbar{
+    display: none;
+  }
+  .popular-collection{
+    padding: 0px 10px;
+  }
+  .collection-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  } 
+ .Influencer-container{
+  text-align: center;
+ }
+ .camera{
+  border-radius:50% ;
+ }
+ 
+  
 }
