@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.poppins-thin-font {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* share style starts */
+:root {
+  --font-16: 1rem;
+  --font-14: 0.8rem;
+  --font-24: 1.5rem;
+  --font-28: 1.75rem;
+  --font-52: 3.25rem;
+  --font-600: 600;
+  --font-700: 700;
+}
+img {
+  width: 100%;
+}
+.display-flex {
+  display: flex;
+}
+header,
+main {
+  background-color: rgb(254, 254, 254);
+}
+header {
+  padding: 20px 100px 20px 100px;
+}
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.btn {
+  max-width: 200px;
+  background-color: rgb(224, 44, 109);
+  border: none;
+  height: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+}
+/* .font-16-600{
+  font-size: 1rem;
+  font-weight: 600;
+} */
+/* shared style ends */
+
+/* header section starts */
+/* nav section starts */
+.navbar {
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-item {
+  font-size: var(--font-16);
+  font-weight: var(--font-600);
+  margin: 0px 10px;
+  text-decoration: none;
+  color: rgb(58, 58, 58);
+}
+.start-enjoy {
+  align-items: center;
+  gap: 6rem;
+}
+
+.Influencer-title {
+  font-size: var(--font-52);
+  font-weight: var(--font-700);
+}
+.camera {
+  max-width: 400px;
+  height: 310px;
+  border: 1px dashed gray;
+  margin-top: 60px;
+  margin-right: 20px;
+  background-image: url("../images/Circle\ design.svg");
+  background-position: center;
+}
+.Influencer-driscription {
+  max-width: 500px;
+  font-size: var(--font-16);
+  font-weight: var(--font-600);
+}
+.btn-round{
+  border-radius: 41px;
+}
+/* nav section ends */
+/* header section ends */
+
+@media screen and (max-width: 576px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .nav-item {
+    display: block;
+  }
+}
