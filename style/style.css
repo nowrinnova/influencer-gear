@@ -16,6 +16,10 @@
   --font-600: 600;
   --font-700: 700;
 }
+body{
+  max-width: 1440px;
+  margin: 0 auto;
+}
 img {
   width: 100%;
 }
@@ -64,6 +68,7 @@ nav {
 }
 .start-enjoy {
   align-items: center;
+  margin: 0 auto;
   gap: 6rem;
   margin-bottom: 50px;
 }
@@ -113,11 +118,15 @@ nav {
   max-width: 800px;
   padding: 50px 120px;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 .collection-container{
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 20px;
+}
+.collection-header{
+  text-align: center;
 }
 .collection-card{
   max-width: 280px;
@@ -138,6 +147,32 @@ font-size:12px ;
 color: rgb(120, 120, 133);
 
 }
+.products{
+  max-width: 800px;
+  gap: 50px;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.product-img{
+  max-width: 600px;
+  height: 200px;
+ 
+}
+/* footer starts */
+footer{
+  max-width:auto;
+  background-color: black;
+  color: white;
+  text-align: center;
+  
+}
+.footer-container{
+  width: 250px;
+  margin: 0 auto;
+  padding: 30px 0px;
+}
+/* footer ends */
 /* main section ends here */
 
 @media screen and (max-width: 576px) {
@@ -145,7 +180,7 @@ color: rgb(120, 120, 133);
     padding: 0px;
   }
   .start-enjoy{
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .brand-container {
     flex-wrap: wrap;
@@ -162,13 +197,24 @@ color: rgb(120, 120, 133);
   .collection-container{
     display: grid;
     grid-template-columns: repeat(1,1fr);
+    
   } 
- .Influencer-container{
+  .collection-card{
+    margin: 0 auto;
+  }
+ .Influencer-container,.collection-header{
   text-align: center;
  }
  .camera{
   border-radius:50% ;
  }
+ .products{
+  flex-direction: column;
+  text-align: center;
  
+ }
+ .product-img{
+  width: 80%;
+ }
   
 }
